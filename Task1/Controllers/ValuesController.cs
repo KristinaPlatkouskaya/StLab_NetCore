@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Task1.Models;
 
 namespace task1.Controllers
@@ -11,11 +7,11 @@ namespace task1.Controllers
     public class ValuesController : Controller
     {
         [HttpGet]
-        public ActionResult Get(SumResultModel model)
+        public ActionResult Get(ValueModel model)
         {
             if (ModelState.IsValid)
             {
-                return Ok(new SumResultModel { A = model.A, B = model.B, Sum = (int)(model.A + model.B) });
+                return Ok(new SumResultModel { A = (int)model.A, B = (int)model.B, Sum = (int)(model.A + model.B) });
             }
             else
             {

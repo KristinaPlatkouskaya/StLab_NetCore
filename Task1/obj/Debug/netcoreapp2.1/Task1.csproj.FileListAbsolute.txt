@@ -11,3 +11,4 @@ C:\Users\K.Platkouskaya\Desktop\Task1\Task1\obj\Debug\netcoreapp2.1\Task1.Assemb
 C:\Users\K.Platkouskaya\Desktop\Task1\Task1\obj\Debug\netcoreapp2.1\Task1.RazorTargetAssemblyInfo.cache
 C:\Users\K.Platkouskaya\Desktop\Task1\Task1\obj\Debug\netcoreapp2.1\Task1.dll
 C:\Users\K.Platkouskaya\Desktop\Task1\Task1\obj\Debug\netcoreapp2.1\Task1.pdb
+C:\Users\K.Platkouskaya\Desktop\Task1\Task1\obj\Debug\netcoreapp2.1\Task1.csprojAssemblyReference.cache
