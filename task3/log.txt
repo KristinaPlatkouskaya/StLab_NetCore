@@ -1,0 +1,171 @@
+
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:07:10
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:07:13
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:08:23
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:08:27
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:13:00
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:13:09
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Delete (task3)
+Method: DELETE
+Date: 12.08.2018 14:13:37
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Delete (task3)
+Method: DELETE
+Date: 12.08.2018 14:13:43
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:13:46
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:13:55
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:14:04
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:28:20
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:28:55
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:29:02
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:29:36
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:29:56
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Delete (task3)
+Method: DELETE
+Date: 12.08.2018 14:30:15
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:30:19
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:30:43
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:30:47
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Put (task3)
+Method: PUT
+Date: 12.08.2018 14:31:18
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:31:25
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:31:36
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:31:39
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:31:50
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:31:54
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:32:07
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:32:11
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:34:02
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:34:10
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 12.08.2018 14:34:22
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:34:26
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Delete (task3)
+Method: DELETE
+Date: 12.08.2018 14:35:00
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 12.08.2018 14:35:05
