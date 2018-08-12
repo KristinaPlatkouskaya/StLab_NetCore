@@ -6,8 +6,7 @@ namespace task2.Services
 {
     public interface IDataService
     {
-        Task<StarShipsModel> GetDataAsync(string url);
-        StarShipsModel GetData(string url);
-        void FillArray(List<StarShipModel> stars);
+        Task<StarShipsModel> GetDataAsync();
+        StarShipsModel GetData();
     }
 }

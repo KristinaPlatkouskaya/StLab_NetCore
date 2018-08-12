@@ -16,16 +16,14 @@ namespace task2.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            string url = "https://swapi.co/api/starships";
-            return Ok(_dataService.GetData(url));
+            return Ok(_dataService.GetData());
         }
 
         // GET api/values/async
         [HttpGet("async")]
         public async Task<ActionResult> GetAsync()
         {
-            string url = "https://swapi.co/api/starships";
-            return Ok(await _dataService.GetDataAsync(url));
+            return Ok(await _dataService.GetDataAsync());
         }
     }
 }
