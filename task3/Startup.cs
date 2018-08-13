@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using task3.Attributes;
 using task3.Loggers;
 using task3.Services;
@@ -29,7 +28,7 @@ namespace task3
             services.AddAutoMapper();
             services.AddDbContext<FilmsStoreDbContext>(options => options.UseSqlServer(connection));
             services.AddMvc().AddXmlDataContractSerializerFormatters();
-            services.AddTransient<IFilmService, FilmService>();
+            services.AddTransient<IFilmRepository, FilmRepository>();
             services.AddTransient<IActionLogger, FileLogger>();
             services.AddScoped<ActionAttribute>();
             services.AddScoped<ExceptionAttribute>();
@@ -41,6 +40,7 @@ namespace task3
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                DbInitializer.Seed(app);
             }
 
             app.UseMvc();

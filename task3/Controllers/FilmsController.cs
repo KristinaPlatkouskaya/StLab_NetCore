@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using task3.Attributes;
+using task3.Domain.Entities;
 using task3.Models;
 using task3.Services;
 
@@ -13,28 +15,30 @@ namespace task3.Controllers
     [ServiceFilter(typeof(ExceptionAttribute))]
     public class FilmsController : ControllerBase
     {
-        private readonly IFilmService _filmService;
-        public FilmsController(IFilmService filmService)
+        private readonly IFilmRepository _filmService;
+        private readonly IMapper _mapper;
+        public FilmsController(IFilmRepository filmService, IMapper mapper)
         {
             this._filmService = filmService;
+            this._mapper = mapper;
         }
 
         // GET api/films
         [HttpGet]
         public async Task<ActionResult> Get()
         {
-            ICollection<FilmModel> films = await this._filmService.GetFilmsAsync();
-            return Ok(films);
+            List<Film> films = await this._filmService.GetFilmsAsync();
+            return Ok(_mapper.Map<List<Film>, List<FilmModel>>(films));
         }
 
         // GET api/films/5
         [HttpGet("{id}")]
         public async Task<ActionResult> Get(int id)
         {
-            FilmModel film = await this._filmService.GetFilmByIdAsync(id);
+            Film film = await this._filmService.GetFilmByIdAsync(id);
             if (film != null)
             {
-                return Ok(film);
+                return Ok(_mapper.Map<Film, FilmModel>(film));
             }
             return NotFound();
         }
@@ -43,32 +47,34 @@ namespace task3.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] FilmModel filmModel)
         {
-            if (filmModel != null)
+            if (ModelState.IsValid)
             {
-                await this._filmService.AddFilmAsync(filmModel);
+                Film film = _mapper.Map<FilmModel, Film>(filmModel);
+                await this._filmService.AddFilmAsync(film);
                 return Ok();
             }
-            return BadRequest();
+            return BadRequest(ModelState);
         }
 
         // PUT api/films
         [HttpPut]
         public async Task<ActionResult> Put([FromBody] FilmModel filmModel)
         {
-            if (filmModel != null)
+            if (ModelState.IsValid)
             {
-                await this._filmService.EditFilmAsync(filmModel);
+                Film film = _mapper.Map<FilmModel, Film>(filmModel);
+                await this._filmService.EditFilmAsync(film);
                 return Ok();
             }
-            return BadRequest();
+            return BadRequest(ModelState);
         }
 
         // DELETE api/films/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            FilmModel filmModel = await this._filmService.DeleteFilmAsync(id);
-            if (filmModel != null)
+            Film film = await this._filmService.DeleteFilmAsync(id);
+            if (film != null)
             {
                 return Ok();
             }

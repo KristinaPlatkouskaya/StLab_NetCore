@@ -169,3 +169,58 @@ Action info
 Action: task3.Controllers.FilmsController.Get (task3)
 Method: GET
 Date: 12.08.2018 14:35:05
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:32:06
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:33:00
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:33:06
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:33:09
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Post (task3)
+Method: POST
+Date: 13.08.2018 13:33:24
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Put (task3)
+Method: PUT
+Date: 13.08.2018 13:33:30
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Delete (task3)
+Method: DELETE
+Date: 13.08.2018 13:33:39
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:33:44
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:37:21
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 13:37:28
+Action info
+---------------
+Action: task3.Controllers.FilmsController.Get (task3)
+Method: GET
+Date: 13.08.2018 14:02:32

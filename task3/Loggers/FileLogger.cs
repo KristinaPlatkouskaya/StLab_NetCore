@@ -19,13 +19,13 @@ namespace task3.Loggers
             {
                 lock (_lock)
                 {
-                    using (StreamWriter reader = new StreamWriter(filePath, true, System.Text.Encoding.Default))
+                    using (StreamWriter sr = new StreamWriter(filePath, true, System.Text.Encoding.Default))
                     {
-                        reader.WriteLine("Action info");
-                        reader.WriteLine("---------------");
-                        reader.WriteLine(string.Concat("Action: ",context.ActionDescriptor.DisplayName));
-                        reader.WriteLine(string.Concat("Method: ", context.HttpContext.Request.Method));
-                        reader.WriteLine(string.Concat("Date: ", DateTime.Now));
+                        sr.WriteLine("Action info");
+                        sr.WriteLine("---------------");
+                        sr.WriteLine(string.Concat("Action: ",context.ActionDescriptor.DisplayName));
+                        sr.WriteLine(string.Concat("Method: ", context.HttpContext.Request.Method));
+                        sr.WriteLine(string.Concat("Date: ", DateTime.Now));
                     }
                 }
             }
@@ -36,11 +36,11 @@ namespace task3.Loggers
             {
                 lock (_lock)
                 {
-                    using (StreamWriter reader = new StreamWriter(filePath, true, System.Text.Encoding.Default))
+                    using (StreamWriter sr = new StreamWriter(filePath, true, System.Text.Encoding.Default))
                     {
-                        reader.WriteLine("Exception info");
-                        reader.WriteLine("---------------");
-                        reader.WriteLine(string.Concat("Exception: ",context.Exception));
+                        sr.WriteLine("Exception info");
+                        sr.WriteLine("---------------");
+                        sr.WriteLine(string.Concat("Exception: ",context.Exception));
                     }
                 }
             }

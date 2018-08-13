@@ -9,14 +9,12 @@ using task3.Models;
 
 namespace task3.Services
 {
-    public class FilmService : IFilmService
+    public class FilmRepository : IFilmRepository
     {
         private readonly FilmsStoreDbContext _context;
-        private readonly IMapper _mapper;
-        public FilmService(FilmsStoreDbContext context, IMapper mapper)
+        public FilmRepository(FilmsStoreDbContext context)
         {
             this._context = context;
-            this._mapper = mapper;
             if (!this._context.Films.Any())
             {
                 this._context.Films.Add(new Film { Name = "The Lake House", Country = "United States", Year = 2006, Producer = "Doug Davison" });
@@ -26,17 +24,15 @@ namespace task3.Services
                 this._context.SaveChanges();
             }
         }
-        public async Task<ICollection<FilmModel>> GetFilmsAsync()
+        public async Task<List<Film>> GetFilmsAsync()
         {
-            List<Film> films = await this._context.Films.ToListAsync();
-            return _mapper.Map<List<Film>, List<FilmModel>>(films);
+            return await this._context.Films.ToListAsync();
         }
-        public async Task<FilmModel> GetFilmByIdAsync(int id)
+        public async Task<Film> GetFilmByIdAsync(int id)
         {
-            Film film = await this._context.Films.FirstOrDefaultAsync(f => f.Id == id);
-            return _mapper.Map<Film, FilmModel>(film);
+            return await this._context.Films.FirstOrDefaultAsync(f => f.Id == id);
         }
-        public async Task<FilmModel> DeleteFilmAsync(int id)
+        public async Task<Film> DeleteFilmAsync(int id)
         {
             Film deletedFilm = await this._context.Films.FindAsync(id);
             if (deletedFilm != null)
@@ -44,17 +40,15 @@ namespace task3.Services
                 this._context.Films.Remove(deletedFilm);
                 await this._context.SaveChangesAsync();
             }
-            return _mapper.Map<Film,FilmModel>(deletedFilm);
+            return deletedFilm;
         }
-        public async Task AddFilmAsync(FilmModel filmModel)
+        public async Task AddFilmAsync(Film film)
         {
-            Film film = _mapper.Map<FilmModel, Film>(filmModel);
             this._context.Films.Add(film);
             await this._context.SaveChangesAsync();
         }
-        public async Task EditFilmAsync(FilmModel filmModel)
+        public async Task EditFilmAsync(Film film)
         {
-            Film film = _mapper.Map<FilmModel, Film>(filmModel);
             if (this._context.Films.Any(f => f.Id == film.Id))
             {
                 this._context.Films.Update(film);
