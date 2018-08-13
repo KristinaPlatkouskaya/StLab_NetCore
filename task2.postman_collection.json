@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "045c9d0b-f452-44d4-a181-c5e783a686e2",
+		"name": "task2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "c42e83fa-b568-4a95-b9ea-1e359ae87464",
+			"name": "getDataAsync_return_json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "4edcaad1-4e79-436d-91b2-fc908abd7aaf",
+			"name": "getDataAsync_return_xml",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ee955ad7-cb93-466d-b3dd-d110fd0b70ba",
+			"name": "getData_return_json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "1b930726-a1db-474e-b5f3-d40513fd4279",
+			"name": "getData_return_xml",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
