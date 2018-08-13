@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -15,14 +15,6 @@ namespace task3.Services
         public FilmRepository(FilmsStoreDbContext context)
         {
             this._context = context;
-            if (!this._context.Films.Any())
-            {
-                this._context.Films.Add(new Film { Name = "The Lake House", Country = "United States", Year = 2006, Producer = "Doug Davison" });
-                this._context.Films.Add(new Film { Name = "Lucky Number Slevin", Country = "Germany, Canada, United Kingdom, United States", Year = 2006, Producer = "Chris Roberts" });
-                this._context.Films.Add(new Film { Name = "Catch Me If You Can", Country = "United States", Year = 2002, Producer = "Steven Spielberg" });
-                this._context.Films.Add(new Film { Name = "The Social Network", Country = "United States", Year = 2010, Producer = "Scott Rudin" });
-                this._context.SaveChanges();
-            }
         }
         public async Task<List<Film>> GetFilmsAsync()
         {
