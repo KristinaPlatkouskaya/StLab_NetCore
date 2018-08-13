@@ -10,7 +10,6 @@ using task3.Services;
 namespace task3.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
     [ServiceFilter(typeof(ActionAttribute))]
     [ServiceFilter(typeof(ExceptionAttribute))]
     public class FilmsController : ControllerBase
@@ -27,8 +26,8 @@ namespace task3.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
-            List<Film> films = await this._filmService.GetFilmsAsync();
-            return Ok(_mapper.Map<List<Film>, List<FilmModel>>(films));
+            ICollection<Film> films = await this._filmService.GetFilmsAsync();
+            return Ok(films);
         }
 
         // GET api/films/5
@@ -38,7 +37,7 @@ namespace task3.Controllers
             Film film = await this._filmService.GetFilmByIdAsync(id);
             if (film != null)
             {
-                return Ok(_mapper.Map<Film, FilmModel>(film));
+                return Ok(film);
             }
             return NotFound();
         }

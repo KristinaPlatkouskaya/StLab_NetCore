@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -16,7 +16,7 @@ namespace task3.Services
         {
             this._context = context;
         }
-        public async Task<List<Film>> GetFilmsAsync()
+        public async Task<ICollection<Film>> GetFilmsAsync()
         {
             return await this._context.Films.ToListAsync();
         }

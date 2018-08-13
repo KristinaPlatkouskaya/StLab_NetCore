@@ -4,7 +4,6 @@ namespace task3.Models
 {
     public class FilmModel
     {
-        [Required(ErrorMessage = "The Id filed is requered")]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The Name filed is requered")]

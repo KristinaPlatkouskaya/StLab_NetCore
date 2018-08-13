@@ -5,7 +5,7 @@ namespace task3.Services
 {
     public interface IFilmRepository
     {
-        Task<List<Film>> GetFilmsAsync();
+        Task<ICollection<Film>> GetFilmsAsync();
         Task<Film> GetFilmByIdAsync(int id);
         Task<Film> DeleteFilmAsync(int id);
         Task AddFilmAsync(Film film);
