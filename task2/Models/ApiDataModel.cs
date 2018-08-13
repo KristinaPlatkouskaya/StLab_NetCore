@@ -10,7 +10,6 @@ namespace task2.Models
         }
         public string Next { get; set; }
         public int Count { get; set; }
-
         public List<StarShipModel> Results { get; set; }
     }
 }
