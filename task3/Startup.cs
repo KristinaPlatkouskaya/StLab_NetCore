@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -29,7 +29,7 @@ namespace task3
             services.AddDbContext<FilmsStoreDbContext>(options => options.UseSqlServer(connection));
             services.AddMvc().AddXmlDataContractSerializerFormatters();
             services.AddTransient<IFilmRepository, FilmRepository>();
-            services.AddTransient<IActionLogger, FileLogger>();
+            services.AddSingletont<IActionLogger, FileLogger>();
             services.AddScoped<ActionAttribute>();
             services.AddScoped<ExceptionAttribute>();
         }
