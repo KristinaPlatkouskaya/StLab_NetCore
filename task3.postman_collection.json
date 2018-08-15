@@ -1,13 +1,12 @@
 {
 	"info": {
-		"_postman_id": "7739632e-98f3-4cf1-a79b-6e57bc131062",
-		"name": "task1",
+		"_postman_id": "7603dd56-d0fc-438a-9bea-6053bd699034",
+		"name": "task3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"_postman_id": "0a7eee38-8e75-4d49-855a-00fe8885a215",
-			"name": "Get_a=16_and_b=-12_return_json",
+			"name": "getFilmByIdAsync_id=2_return_Lucky_number_Slevin",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -19,8 +18,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "721ec51b-d4a8-4a5f-b287-f6973b122937",
-			"name": "Get_a=-12_and_b=-12_return_error(a must be greater than 0)",
+			"name": "getFilmsAsync_return_all_films",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -32,8 +30,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "c016e517-b8c9-4668-b986-09bb5eb0802d",
-			"name": "Get_a=23_and_b=12_return_error(b must be less than 0)",
+			"name": "addFilmAsync",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -45,8 +42,7 @@
 			"response": []
 		},
 		{
-			"_postman_id": "062d0666-58c3-478d-99c0-163a2bd18b3d",
-			"name": "Get_a=null_and_b-null_return_errors(a must be defined, b must be defined)",
+			"name": "editFilmAsync",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -58,8 +54,31 @@
 			"response": []
 		},
 		{
-			"_postman_id": "3c4baa95-0b5b-4d7a-9f62-080b62dfcfe2",
-			"name": "Get_a=44_and_b=-2_return_xml",
+			"name": "deleteFilmAsync",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFilmAsync_id=12_return_error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFilmAsync_id=12_return_error",
 			"request": {
 				"method": "GET",
 				"header": [],
